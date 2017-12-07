@@ -1,0 +1,331 @@
+/* чтобы убрат зазоры в инлайн
+.wrapper {
+  font-size: 0;
+}
+
+.inline {
+1rem;
+} чтобы текст показать
+*/
+
+@font-face {
+font-family: "Bebas";
+src: url("../fonts/Bebas/BEBAS.ttf");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "St Marie";
+src: url("../fonts/StMarie/StMarie-Thin.otf");
+font-style: normal;
+font-weight: normal;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: 'Calibri', sans-serif;
+  background: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: 'Calibri Light', sans-serif;
+  color: #6e6d6b;
+}
+
+h3 span {
+  color: #fb9c06;
+}
+
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* HEADER */
+
+header  {
+  width: 1600px;
+  top: 0;
+  height: 128px;
+  position: fixed;
+  border-bottom: 4px solid #FBB950;
+  background: #fff;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+logo {
+  margin: 5px 0 0 18px;
+  float: left;
+  -moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;
+  cursor: default;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 115px;
+  text-align: center;
+  margin: 12px 0 0 140px;
+}
+
+.title span:first-child {
+  color: #fb9c06;
+  font-size: 37px;
+}
+
+.title span:last-child {
+  color: #6e6d6b;
+  font-size: 37px;
+  font-family: 'Bebas', sans-serif;
+  text-transform: uppercase;
+}
+/*logo a h1 {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 115px;
+  text-align: center;
+  margin: 12px 0 0 140px;
+}*/
+
+nav {
+  float: right;
+
+}
+
+nav a {
+  font-size: 22pt;
+  color: #9e9b9b;
+}
+
+nav a:first-child {
+  background-image: url(../img/icon1.png);
+}
+
+nav a:nth-child(2) {
+  background-image: url(../img/icon2.png);
+}
+
+nav a:nth-child(3) {
+  background-image: url(../img/icon3.png);
+}
+
+nav a:nth-child(4) {
+  background-image: url(../img/icon4.png);
+}
+
+nav a:last-child {
+  background-image: url(../img/icon5.png);
+}
+
+main {
+  margin-top: 132px;
+  min-height: calc(100%-73px);
+}
+
+/* SLIDER */
+
+.slider {
+  width: 1600px;
+  height: 400px;
+  background-image: url(../img/slider-bg.jpg);
+  border-bottom: 4px solid #fb9c06;
+}
+
+.slider h2 {
+  text-transform: uppercase;
+  font-family: 'Bebas', sans-serif;
+  font-size: 37px;
+}
+
+.slider h2:first-child {
+  padding: 17px 13px 14px 31px;
+  width: 380px;
+  color: #fb9c06;
+  background-color: rgba(0, 0, 0, 0.69);
+  margin: 0 0 16px 20px;
+}
+
+.slider h2:last-child {
+  padding: 20px 34px;
+  width: 385px;
+  color: #6e6d6b;
+  background-color: rgba(255, 175, 18, 0.7);
+  margin-left: 10px;
+}
+
+
+.info-article p {
+  max-height: 355px;
+  height: 95%;
+  overflow: hidden;
+  margin: 0;
+
+}
+
+a.info-article-read-more {
+  width: 80%;
+  color: #ffac00;
+  float: right;
+  font-style: italic;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /// cut text and put 3 ... at the designed
+
+}
+
+
+/* TEXT-AREA */
+
+.text-area {
+  width: 1202px;
+  margin: 0 auto;
+}
+
+.text-area article {
+display: inline-block;
+width: 257px;
+height: 197px;
+padding: 29px 20px 0 20px;
+font: bolder 15.3px "Calibri";
+line-height: 23,16px;
+}
+
+
+
+
+/* TEAM */
+
+.team-area {
+  width: 1436px;
+  margin: 0 auto;
+}
+
+.team-area h2 {
+  text-align: center;
+  font-family: 'St Marie', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ff9c00 ;
+  text-decoration: underline;
+  -moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;
+  cursor: default;
+}
+
+.team-area article {
+float: left;
+width: 302px;
+height: 500px;
+margin-right: 147px;
+font: bolder 15.3px "Calibri";
+line-height: 23,16px;
+}
+
+.team-area article:last-child {
+margin-right: 0;
+
+}
+
+
+article h3 {
+  text-align: center;
+  margin-top: 45px;
+}
+
+figure {
+  margin: 30px 0 25px 0;
+}
+figure img {
+	border: 8px solid #ffb540;
+	border-radius: 50%;
+}
+
+.messager {
+  clear: left;
+  padding-top: 50px;
+}
+
+.messager h2 {
+  font-family: 'St Marie', sans-serif;
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  color: #ff9c00 ;
+  text-decoration: underline;
+  -moz-user-select: none;
+-khtml-user-select: none;
+user-select: none;
+  cursor: default;
+  margin-bottom: 65px;
+}
+figcaption {
+  font-size: 15px;
+  font-family: 'Calibri Light', sans-serif;
+  max-width: 270px;
+}
+/* CONTACT */
+
+
+
+
+button {
+  background-color: #fb9c06;
+  color: #fff;
+  font-size: 30px;
+  font-family: 'St Marie', sans-serif;
+  padding: 10px 36px;
+  border: none;
+  border-bottom: 3px solid #cc830f;
+  margin-bottom: 33px;
+}
+
+/* FOOTER */
+
+
+footer {
+  height: 73px;
+  padding-top: 22px;
+  text-align: center;
+  font-family: 'St Marie', sans-serif;
+  font-size: 33px;
+  color: #fff;
+  background-color: #fb9c06;
+  border-bottom: 11px solid #fff;
+  text-transform: uppercase;
+}
+
+.cont {
+  height: 100%;
+  border-bottom: 3px solid #cc830f;
+}
