@@ -238,21 +238,22 @@ a.info-article-read-more {
 
 /* TEXT-AREA */
 
-.text-area {
-  width: 1202px;
-  margin: 0 auto;
-}
-
 .text-area article {
 display: inline-block;
 width: 257px;
-height: 197px;
-padding: 29px 20px 0 20px;
-font: bolder 15.3px "Calibri";
+height: 155px;
+margin-top: 29px;
+padding: 0 20px 0 20px;
+font: bolder 15.3px "Calibri Regular";
 line-height: 23.16px;
 }
 
-article p:last-child {
+.text-area article p:first-child {
+ max-height: 135px;
+ overflow: hidden;
+
+}
+.text-area article p:last-child {
   font-family: 'Calibri Light', sans-serif;
 font-style: italic;
 
