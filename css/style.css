@@ -120,6 +120,7 @@ user-select: none;
 nav {
   float: right;
   margin: 10px 5px 0 0;
+  font-size: 0;
 }
 
 nav a {
@@ -238,11 +239,16 @@ a.info-article-read-more {
 
 /* TEXT-AREA */
 
+.text-area {
+  font-size: 0;
+}
+
 .text-area article {
 display: inline-block;
 width: 257px;
 height: 155px;
 margin-top: 29px;
+margin-bottom: 30px;
 padding: 0 20px 0 20px;
 font: bolder 15.3px "Calibri Regular";
 line-height: 23.16px;
@@ -256,12 +262,17 @@ line-height: 23.16px;
 .text-area article p:last-child {
   font-family: 'Calibri Light', sans-serif;
 font-style: italic;
-
   text-align: right;
   color: #ffac00;
 }
 
-
+.gradient {
+  width: 100%;
+  height: 3px;
+  background: -webkit-linear-gradient(top, rgba(242,242,242,0.65) 0%,rgba(242,242,242,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(242,242,242,0.65) 0%,rgba(242,242,242,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6f2f2f2', endColorstr='#00f2f2f2',GradientType=0 ); /* IE6-9 */
+}
 
 
 /* TEAM */
@@ -269,6 +280,7 @@ font-style: italic;
 .team-area {
   width: 1436px;
   margin: 0 auto;
+  margin-top: 108px;
 }
 
 .team-area h2 {
@@ -311,6 +323,12 @@ figure img {
 	border: 8px solid #ffb540;
 	border-radius: 50%;
 }
+
+figcaption p {
+  padding-left: 30px;
+}
+
+
 
 .messager {
   clear: left;
