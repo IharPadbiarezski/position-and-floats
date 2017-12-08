@@ -36,7 +36,7 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
+  min-height: colc(100%-87px);
   font-size: 10px;
   font-family: 'Calibri', sans-serif;
   background: #fff;
@@ -119,32 +119,42 @@ user-select: none;
 
 nav {
   float: right;
-
+  margin: 10px 5px 0 0;
 }
 
 nav a {
+  display: inline-block;
   font-size: 22pt;
   color: #9e9b9b;
 }
 
 nav a:first-child {
-  background-image: url(../img/icon1.png);
+  padding-top: 55px;
+  background: url(../img/navig.png) -10px 0 no-repeat;
+  margin-right: 72px;
 }
 
 nav a:nth-child(2) {
-  background-image: url(../img/icon2.png);
+  padding-top: 55px;
+  background: url(../img/navig.png) -80px 0 no-repeat;
+  margin-right: 68px;
 }
 
 nav a:nth-child(3) {
-  background-image: url(../img/icon3.png);
+  padding-top: 55px;
+  margin-right: 80px;
+  background: url(../img/navig.png) -150px 0 no-repeat;
 }
 
 nav a:nth-child(4) {
-  background-image: url(../img/icon4.png);
+  padding-top: 55px;
+  margin-right: 83px;
+  background: url(../img/navig.png) -225px 0 no-repeat;
 }
 
 nav a:last-child {
-  background-image: url(../img/icon5.png);
+  padding-top: 55px;
+  background: url(../img/navig.png) -280px 0 no-repeat;
 }
 
 main {
@@ -297,7 +307,10 @@ figcaption {
 /* CONTACT */
 
 
-
+input:focus {
+  border-color: pink;
+}
+/*:selected, :blur; linear-gradient */
 
 button {
   background-color: #fb9c06;
