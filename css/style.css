@@ -36,7 +36,7 @@ html {
 
 body {
   width: 100%;
-  min-height: colc(100%-87px);
+  min-height: calc(100vh - 70px);
   font-size: 10px;
   font-family: 'Calibri', sans-serif;
   background: #fff;
@@ -124,13 +124,21 @@ nav {
 
 nav a {
   display: inline-block;
-  font-size: 22pt;
+  font-family: 'Calibri Regular', sans-serif;
+  font-size: 22px;
   color: #9e9b9b;
+  transition: 0.8s;
+  filter: grayscale(100%);
+}
+
+nav a:hover {
+  filter: none;
+  color: #fb9c06;
 }
 
 nav a:first-child {
   padding-top: 55px;
-  background: url(../img/navig.png) -10px 0 no-repeat;
+  background: url(../img/navig.png) -15px 0 no-repeat;
   margin-right: 72px;
 }
 
@@ -143,18 +151,19 @@ nav a:nth-child(2) {
 nav a:nth-child(3) {
   padding-top: 55px;
   margin-right: 80px;
-  background: url(../img/navig.png) -150px 0 no-repeat;
+  background: url(../img/navig.png) -160px 0 no-repeat;
 }
 
 nav a:nth-child(4) {
+  width: 41px;
   padding-top: 55px;
   margin-right: 83px;
-  background: url(../img/navig.png) -225px 0 no-repeat;
+  background: url(../img/navig.png) -229px 0 no-repeat;
 }
 
 nav a:last-child {
   padding-top: 55px;
-  background: url(../img/navig.png) -280px 0 no-repeat;
+  background: url(../img/navig.png) -290px 0 no-repeat;
 }
 
 main {
@@ -165,32 +174,45 @@ main {
 /* SLIDER */
 
 .slider {
-  width: 1600px;
   height: 400px;
-  background-image: url(../img/slider-bg.jpg);
+  background: url(../img/slider-bg.jpg);
   border-bottom: 4px solid #fb9c06;
+  margin-top: 0;
 }
 
-.slider h2 {
+.slide-bg {
+ padding-top: 130px;
+  }
+
+  .slider h2 {
+  display: block;
   text-transform: uppercase;
   font-family: 'Bebas', sans-serif;
   font-size: 37px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
 }
 
 .slider h2:first-child {
-  padding: 17px 13px 14px 31px;
-  width: 380px;
+  width: 382px;
+  height: 66px;
   color: #fb9c06;
-  background-color: rgba(0, 0, 0, 0.69);
-  margin: 0 0 16px 20px;
+  background: rgba(0, 0, 0, 0.69);
+  padding-top: 8px;
+  margin-left: 20px;
 }
 
 .slider h2:last-child {
-  padding: 20px 34px;
-  width: 385px;
+  width: 396px;
+  height: 68px;
+  padding-top: 10px;
+  padding-left: 20px;
   color: #6e6d6b;
-  background-color: rgba(255, 175, 18, 0.7);
+  background: rgba(255, 175, 18, 0.7);
   margin-left: 10px;
+  margin-top: 27px;
 }
 
 
@@ -227,7 +249,15 @@ width: 257px;
 height: 197px;
 padding: 29px 20px 0 20px;
 font: bolder 15.3px "Calibri";
-line-height: 23,16px;
+line-height: 23.16px;
+}
+
+article p:last-child {
+  font-family: 'Calibri Light', sans-serif;
+font-style: italic;
+
+  text-align: right;
+  color: #ffac00;
 }
 
 
